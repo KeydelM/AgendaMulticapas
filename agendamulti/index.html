@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Web</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/Styless.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-address-book"></i> Agenda de Contactos</h1>
+
+        <form class="form-inline mb-4">
+            <input type="text" class="form-control mb-2" id="nombre" placeholder="Nombre" required>
+            <input type="text" class="form-control mb-2" id="apellido" placeholder="Apellido" required>
+            <input type="tel" class="form-control mb-2" id="telefono" placeholder="Teléfono" required>
+            <button id="agregarContacto" class="btn btn-success mb-2"><i class="fas fa-plus-circle"></i> Agregar</button>
+        </form>
+
+        <h3 class="mb-3"><i class="fas fa-list"></i> Lista de Contactos</h3>
+        <ul id="contacts" class="list-group mt-3">
+            <!-- Los contactos se cargarán aquí -->
+        </ul>
+
+        <footer>
+            <p>&copy; 2024 Agenda Web. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <script src="./Js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
